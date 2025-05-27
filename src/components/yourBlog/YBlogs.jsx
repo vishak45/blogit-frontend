@@ -21,7 +21,7 @@ function YBlogs() {
   const deleteHandle = async (x) => {
     try {
      
-      const res = await fetch(`https://blogit-backend-38mt.onrender.com/api/blog/delete/${x}`, {
+      const res = await fetch(`https://blogit-backend-nfpc.onrender.com/api/blog/delete/${x}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -62,7 +62,7 @@ function YBlogs() {
   
       try {
         const response = await fetch(
-          `https://blogit-backend-38mt.onrender.com/api/blog/like/${bid}/${uid}`,
+          `https://blogit-backend-nfpc.onrender.com/api/blog/like/${bid}/${uid}`,
           {
             method: "PATCH",
             headers: {
@@ -87,7 +87,7 @@ function YBlogs() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch("https://blogit-backend-38mt.onrender.com/api/blog/get", {
+        const response = await fetch("https://blogit-backend-nfpc.onrender.com/api/blog/get", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -134,7 +134,7 @@ function YBlogs() {
                     ? blog.Images.map((image) =>
                         
                           <img
-                            src={`https://blogit-backend-38mt.onrender.com/${image.imageUrl}`}
+                            src={`https://blogit-backend-nfpc.onrender.com/${image.imageUrl}`}
                             className="card-img-top"
                             alt={blog.title}
                             key={image._id}
