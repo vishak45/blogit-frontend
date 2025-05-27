@@ -110,14 +110,12 @@ export default function SearchResults() {
                                   (image, index) => (
                                     flag++,
                                     (
-                                      <img
-                                        key={index}
-                                        src={`https://blogit-backend-nfpc.onrender.com/${image.imageUrl.replace(
-                                          /\\/g,
-                                          "/"
-                                        )}`}
-                                        alt={`Blog Image ${index + 1}`}
-                                      />
+                                     <img
+  key={index}
+  src={image.imageUrl.replace(/\\/g, "/")}
+  alt={`Blog Image ${index + 1}`}
+/>
+
                                     )
                                   )
                                 )
