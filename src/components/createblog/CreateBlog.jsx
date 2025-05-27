@@ -27,7 +27,7 @@ function CreateBlog() {
     });
     try{
              await axios.post(
-      "https://blogit-backend-38mt.onrender.com/api/blog/create",
+      "https://blogit-backend-nfpc.onrender.com/api/blog/create",
        formData ,
       {
         headers: {
