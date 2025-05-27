@@ -14,7 +14,7 @@ function Home() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch("https://blogit-backend-38mt.onrender.com/api/blog/allblog", {
+        const response = await fetch("https://blogit-backend-nfpc.onrender.com/api/blog/allblog", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -43,7 +43,7 @@ function Home() {
     
     try {
       const response = await fetch(
-        `https://blogit-backend-38mt.onrender.com/api/blog/like/${bid}/${uid}`,
+        `https://blogit-backend-nfpc.onrender.com/api/blog/like/${bid}/${uid}`,
         {
           method: "PATCH",
           headers: {
@@ -149,7 +149,7 @@ function Home() {
                                   (
                                     <img
                                       key={index}
-                                      src={`https://blogit-backend-38mt.onrender.com/${image.imageUrl.replace(
+                                      src={`https://blogit-backend-nfpc.onrender.com/${image.imageUrl.replace(
                                         /\\/g,
                                         "/"
                                       )}`}
