@@ -1,7 +1,99 @@
-.image-container{
-display: flex;
+/* ...existing code... */
+
+.blog-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
 }
-.image-container img{
-    width: 200px;
-    height: auto;
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(60, 72, 88, 0.08);
+  padding: 1.5rem 2rem;
+  transition: box-shadow 0.2s;
+  border: 1px solid #f0f0f0;
+  width: 100%;
 }
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(60, 72, 88, 0.16);
+}
+
+.image-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  overflow-x: auto;
+}
+
+.image-container img {
+  max-width: 250px;
+  max-height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 8px rgba(60, 72, 88, 0.06);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  color: #22223b;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.like-btn {
+  background: #f5f7fa;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  color: #495057;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.like-btn.liked {
+  background: #e7f0fe;
+  color: #3d77e3;
+}
+
+.like-btn:hover {
+  background: #e7f0fe;
+  color: #3d77e3;
+}
+
+.comment-btn {
+  background: #fff;
+  border: none;
+  color: #d33;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.comment-btn:hover {
+  color: #a00;
+}
+
+.btn.btn-primary {
+  margin-left: 10px;
+  border-radius: 6px;
+  padding: 0.4rem 1.2rem;
+  font-weight: 600;
+}
+
+/* ...existing code... */
