@@ -1,116 +1,112 @@
-.blog-card { 
-  padding: 20px;
+/* ...existing code... */
+
+.blog-card {
+  display: flex;
   flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
+  gap: 2rem;
+  margin-top: 1.5rem;
 }
+
+.blog-owner {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(60, 72, 88, 0.08);
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.2s;
+  border: 1px solid #f0f0f0;
+}
+
+.blog-owner:hover {
+  box-shadow: 0 8px 32px rgba(60, 72, 88, 0.16);
+}
+
+.owner-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
 .owner-details {
   display: flex;
+  gap: 1rem;
+  font-size: 0.95rem;
+  color: #6c757d;
+}
 
-    flex-direction: column;
-  gap: 10px;
+.owner-name {
+  font-weight: 600;
+  color: #3d77e3;
 }
-.blog-owner {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  border: 1px solid #3a37ff;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 50px;
-  width: 100%;
-  box-sizing: border-box;
+
+.owner-date {
+  font-size: 0.9rem;
+  color: #adb5bd;
 }
-.blog-actions button{
-  border: none;
-  background-color:white;
-}
+
 .blog-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
+  gap: 0.75rem;
 }
 
 .blog-image {
-  width: 100%;
-  height: auto;
-  object-fit: fill;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 10px;
-
-  box-sizing: border-box;
-  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  overflow-x: auto;
 }
 
 .blog-image img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  max-height: 280px;
+  max-width: 250px;
+  max-height: 180px;
+  border-radius: 8px;
   object-fit: cover;
-  flex: 1 1 200px;
-  transition: transform 0.3s ease;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 8px rgba(60, 72, 88, 0.06);
 }
 
-.blog-image img:hover {
-  transform: scale(1.1);
+.blog-content h3 {
+  margin: 0.5rem 0 0.25rem 0;
+  font-size: 1.3rem;
+  color: #22223b;
+  font-weight: 700;
 }
 
-@media (max-width: 992px) {
-  .blog-owner {
-    padding: 10px;
-  }
-  .blog-image {
-    height: auto;
-    gap: 5px;
-    padding: 5px;
-  }
-  .blog-image img {
-    max-width: 220px;
-    max-height: 180px;
-  }
+.blog-content p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-@media (max-width: 768px) {
-  .blog-card {
-    padding: 10px;
-  }
-  .blog-owner {
-    padding: 8px;
-    margin-bottom: 30px;
-  }
-  .blog-image {
-    flex-direction: column;
-    align-items: stretch;
-    height: auto;
-    padding: 5px;
-    gap: 5px;
-  }
-  .blog-image img {
-    max-width: 100%;
-    max-height: 200px;
-  }
+.blog-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-@media (max-width: 480px) {
-  .blog-card {
-    padding: 5px;
-  }
-  .blog-owner {
-    padding: 4px;
-    margin-bottom: 15px;
-  }
-  .blog-image {
-    padding: 2px;
-    gap: 2px;
-  }
-  .blog-image img {
-    max-width: 100%;
-    max-height: 120px;
-  }
+.like-btn {
+  background: #f5f7fa;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  color: #495057;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
+
+.like-btn.liked {
+  background: #e7f0fe;
+  color: #3d77e3;
+}
+
+.like-btn:hover {
+  background: #e7f0fe;
+  color: #3d77e3;
+}
+
+/* ...existing code... */
