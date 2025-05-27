@@ -133,11 +133,13 @@ function YBlogs() {
                   {blog.Images&&blog.Images.length>0
                     ? blog.Images.map((image) =>
                         
-                          <img
-  key={index}
-  src={image.imageUrl.replace(/\\/g, "/")}
-  alt={`Blog Image ${index + 1}`}
+                        <img
+  src={image.imageUrl}
+  className="card-img-top"
+  alt={blog.title}
+  key={image._id}
 />
+
 
                        
                       )
