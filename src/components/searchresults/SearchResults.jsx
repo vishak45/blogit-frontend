@@ -14,7 +14,7 @@ export default function SearchResults() {
   useEffect(() => {
     const isSearch = async () => {
       try {
-        const res = await fetch(`https://blogit-backend-38mt.onrender.com/api/blog/search/${key}`);
+        const res = await fetch(`https://blogit-backend-nfpc.onrender.com/api/blog/search/${key}`);
         if (res.status === 200) {
           const data = await res.json();
           
@@ -42,7 +42,7 @@ export default function SearchResults() {
    
     try {
       const response = await fetch(
-        `https://blogit-backend-38mt.onrender.com/api/blog/like/${bid}/${uid}`,
+        `https://blogit-backend-nfpc.onrender.com/api/blog/like/${bid}/${uid}`,
         {
           method: "PATCH",
           headers: {
@@ -112,7 +112,7 @@ export default function SearchResults() {
                                     (
                                       <img
                                         key={index}
-                                        src={`https://blogit-backend-38mt.onrender.com/${image.imageUrl.replace(
+                                        src={`https://blogit-backend-nfpc.onrender.com/${image.imageUrl.replace(
                                           /\\/g,
                                           "/"
                                         )}`}
