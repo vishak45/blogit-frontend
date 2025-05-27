@@ -14,7 +14,7 @@ export default function EditBlog() {
     const fetchBlog = async () => {
       try {
         const response = await fetch(
-          `https://blogit-backend-38mt.onrender.com/api/blog/getspecific/${id}`,
+          `https://blogit-backend-nfpc.onrender.com/api/blog/getspecific/${id}`,
           {
             method: "GET",
             headers: {
@@ -38,7 +38,7 @@ export default function EditBlog() {
     e.preventDefault();
  
     try {
-      const res = await fetch(`https://blogit-backend-38mt.onrender.com/api/blog/update/${id}`, {
+      const res = await fetch(`https://blogit-backend-nfpc.onrender.com/api/blog/update/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
