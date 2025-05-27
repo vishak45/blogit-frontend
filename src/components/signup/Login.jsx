@@ -14,7 +14,7 @@ function Login() {
     e.preventDefault();
     try {
       // Send email and password as an object
-      const res = await axios.post("https://blogit-backend-38mt.onrender.com/api/user/login", {
+      const res = await axios.post("https://blogit-backend-nfpc.onrender.com/api/user/login", {
         email,
         password,
       });
