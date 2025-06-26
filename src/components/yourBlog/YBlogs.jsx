@@ -209,27 +209,17 @@ function YBlogs() {
             </div>
           ))
         ) : (
-          <div
-            className="jumbotron bg-light p-5 rounded"
-            style={{
-              margin: "100px",
-            }}
-          >
-            <h1 className="display-4">No Blogs :( </h1>
-            <p className="lead">
-              Share your thoughts, read interesting posts, and connect with
-              others.
-            </p>
-            <hr className="my-4" />
-            <p>Click below to create your own.</p>
-            <Link
-              className="btn btn-secondary btn-lg"
-              to="/create-blog"
-              role="button"
-            >
-              Create Blog
-            </Link>
-          </div>
+          <div className="no-blogs-wrapper">
+  <div className="no-blogs-message">
+    <h1 className="display-6">No Blogs :( </h1>
+    <p className="lead">Share your thoughts, read interesting posts, and connect with others.</p>
+    <hr className="my-4" />
+    <p>Click below to create your own.</p>
+    <Link className="btn btn-secondary" to="/create-blog" role="button">
+      Create Blog
+    </Link>
+  </div>
+</div>
         )}
       </div>
     </div>
