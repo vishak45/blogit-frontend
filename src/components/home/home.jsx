@@ -74,20 +74,15 @@ function Home() {
         </p>
         <hr className="my-4" />
         <p>Click below to explore blogs or create your own.</p>
-        <Link
-          className="btn btn-primary btn-lg me-2"
-          to="/your-blog"
-          role="button"
-        >
-          Your Blogs
-        </Link>
-        <Link
-          className="btn btn-secondary btn-lg"
-          to="/create-blog"
-          role="button"
-        >
-          Create Blog
-        </Link>
+       <div className="d-flex flex-wrap gap-2">
+  <Link className="btn btn-primary btn-lg me-2" to="/your-blog" role="button">
+    Your Blogs
+  </Link>
+  <Link className="btn btn-secondary btn-lg" to="/create-blog" role="button">
+    Create Blog
+  </Link>
+</div>
+
       </div>
       <div
         className="row mt-5"
