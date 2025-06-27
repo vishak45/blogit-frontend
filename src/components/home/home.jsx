@@ -119,7 +119,7 @@ function Home() {
                             <>
                               <span className="owner-name">You</span>
                               <span className="owner-date">
-                                {new Date(blog.createdAt).toLocaleDateString()}
+                                {new Date(blog.createdAt).toLocaleDateString("en-GB")}
                               </span>
                             </>
                           ) : (
