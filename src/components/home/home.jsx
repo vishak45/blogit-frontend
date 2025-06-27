@@ -85,7 +85,7 @@ function Home() {
 
       </div>
       <div
-        className="row mt-5"
+        className="mt-5"
         style={{
           height: "auto",
           width: "100%",
