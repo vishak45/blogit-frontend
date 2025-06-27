@@ -98,10 +98,10 @@ function Home() {
           className="col-md-4"
           style={{
             height: "100%",
-            padding: "20px",
+            
             display: "flex",
             flexDirection: "column",
-            width: "90%",
+            width: "100%",
           }}
         >
           <h2>Latest Posts</h2>
